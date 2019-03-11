@@ -1,0 +1,12 @@
+<mat-card *ngFor="let bp of blogPostList$ | async" class="example-card">
+  <mat-card-header>
+    <mat-card-title>{{ bp.title }}</mat-card-title>
+    <mat-card-subtitle>{{ bp.subtitle }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src={{bp.image}} alt={{bp.title}}>
+  <mat-card-content>
+    <p>
+      {{bp.content}}
+    </p>
+  </mat-card-content>
+</mat-card>
